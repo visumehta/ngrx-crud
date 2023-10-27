@@ -1,0 +1,17 @@
+<div class="container mt-3 form-bg">
+<p>Please signup first</p>
+
+    <h2>Signup form</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="submitSignupForm(signupForm.value)">
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" placeholder="Enter email" formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" formControlName="password">
+      </div>
+     
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
